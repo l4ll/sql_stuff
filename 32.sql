@@ -1,3 +1,7 @@
+/*
+32. Одной из характеристик корабля является половина куба калибра его главных орудий (mw). С точностью до 2 десятичных знаков определите среднее значение mw для кораблей каждой страны, у которой есть корабли в базе данных. 
+*/
+
 Select country, convert(decimal (30,2), avg(bore*bore*bore/2)) as b
 from (select c.country as country, convert(decimal (30,2), isnull(c.bore, 0)) as bore, s.name as name
 from ships as s

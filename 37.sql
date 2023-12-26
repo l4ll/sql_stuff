@@ -1,3 +1,7 @@
+/*
+37. Найдите классы, в которые входит только один корабль из базы данных (учесть также корабли в Outcomes). 
+*/
+
 select class from
 (select name, class from ships 
 where name is not null or class is not null

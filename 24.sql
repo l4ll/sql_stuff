@@ -1,3 +1,7 @@
+/*
+24. Перечислите номера моделей любых типов, имеющих самую высокую цену по всей имеющейся в базе данных продукции. 
+*/
+
 with joinn as(
 select Product.maker, PC.speed, PC.ram
 from Product join PC on Product.model=PC.model

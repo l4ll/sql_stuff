@@ -1,3 +1,7 @@
+/*
+39. Найдите корабли, `сохранившиеся для будущих сражений`; т.е. выведенные из строя в одной битве (damaged), они участвовали в другой, произошедшей позже. 
+*/
+
 with bs as
 (select distinct outcomes.ship, outcomes.battle, outcomes.result, battles.date 
 from outcomes join battles on outcomes.battle=battles.name
